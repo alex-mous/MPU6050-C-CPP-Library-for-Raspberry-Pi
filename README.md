@@ -7,7 +7,7 @@ addr - the address of the MPU6050 (usually 0x68; can find with command "i2cdetec
 apt-get install i2c-tools -y")<br> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<b>description:</b><br> 
 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspsets up i2c device and starts loop to read the angle<br> 
 &nbsp&nbsp&nbsp&nbsp<h3>getAccelRaw<br></h3> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<b>args:</b><br> 
-&nbsp&nbsp&nbsp&nbsp&nbsp&bsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspfloat *x - pointer to the variable where the X axis results should 
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspfloat *x - pointer to the variable where the X axis results should 
 be stored<br> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspfloat *y - pointer to the variable where the Y axis 
 results should be stored<br> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspfloat *z - pointer to the variable 
 where the Z axis results should be stored<br> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<b>description:<br></b> 
