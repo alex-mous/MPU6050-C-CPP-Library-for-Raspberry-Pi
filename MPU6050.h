@@ -41,9 +41,8 @@
 #include <sys/ioctl.h>
 #include <sys/types.h>
 #include <time.h>
-extern "C"{ //include the c library in cpp programs.
-	#include <linux/i2c-dev.h>
-}
+#include <linux/i2c-dev.h>
+#include <i2c/smbus.h>
 #include <cmath>
 #include <thread>
 
