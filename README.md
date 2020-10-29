@@ -1,6 +1,8 @@
-<h1>MPU6050 Accelerometer and Gyroscope C++ library</h1><br> <h2>Description</h2><br> &nbsp&nbsp&nbsp&nbspThis is a basic 
+<h1>MPU6050 Accelerometer and Gyroscope C++ library</h1><br>
+<h2>Description</h2><br> &nbsp&nbsp&nbsp&nbspThis is a basic 
 control library for using the MPU6050 accelerometer and gyroscope module with Raspberry Pi using i2c protocol<br> &nbsp&nbsp&nbsp&nbspIt provides functions to read raw accelerometer data and fully 
-corrected (with complementary filters and some logic) angles on any axis (roll, pitch, yaw)<br><br> <h2>Function 
+corrected (with complementary filters and some logic) angles on any axis (roll, pitch, yaw)<br><br> <h2>Installation</h2><br>
+The dependencies for this library are libi2c-dev, i2c-tools, and libi2c0. These can be installed with apt. The latest version of this code now works on Raspbian Buster. Note: to run the code, you will need to enable I2C in raspi-config.<h2>Function 
 Definitions</h2> &nbsp&nbsp&nbsp&nbsp<h3>__constructor__ (MPU6050)<br></h3> 
 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<b>args:</b><br> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspint8_t 
 addr - the address of the MPU6050 (usually 0x68; can find with command "i2cdetect -y 1" (may need to be installed - run "sudo 
