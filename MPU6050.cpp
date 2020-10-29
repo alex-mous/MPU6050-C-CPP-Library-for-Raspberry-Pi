@@ -2,17 +2,6 @@
 //Copyright (c) 2019, Alex Mous
 //Licensed under the CC BY-NC SA 4.0
 
-//Includes
-#include <iostream>
-#include <unistd.h>
-#include <fcntl.h>
-#include <sys/ioctl.h>
-#include <sys/types.h>
-#include <time.h>
-#include <linux/i2c-dev.h>
-#include <cmath>
-#include <thread>
-
 //Include the header file for this class
 #include "MPU6050.h"
 
