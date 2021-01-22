@@ -70,20 +70,20 @@ extern "C" {
 #undef GYRO_RANGE
 
 
-#if GYRO_RANGE == 1
+#if ACCEL_RANGE == 1
 	#define ACCEL_SENS 8192.0
 	#define ACCEL_CONFIG 0b00001000
-#elif GYRO_RANGE == 2
+#elif ACCEL_RANGE == 2
 	#define ACCEL_SENS 4096.0
 	#define ACCEL_CONFIG 0b00010000
-#elif GYRO_RANGE == 3
+#elif ACCEL_RANGE == 3
 	#define ACCEL_SENS 2048.0
 	#define ACCEL_CONFIG 0b00011000
 #else //Otherwise, default to 0
 	#define ACCEL_SENS 16384.0
 	#define ACCEL_CONFIG 0b00000000
 #endif
-#undef GYRO_RANGE
+#undef ACCEL_RANGE
 
 
 
