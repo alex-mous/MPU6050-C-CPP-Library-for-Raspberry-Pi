@@ -41,6 +41,8 @@ MPU6050::MPU6050(int8_t addr, bool run_update_thread) {
 	}
 }
 
+MPU6050::MPU6050(int8_t addr) : MPU6050(addr, true){}
+
 void MPU6050::getGyroRaw(float *roll, float *pitch, float *yaw) {
 	int16_t X = i2c_smbus_read_byte_data(f_dev, 0x43) << 8 | i2c_smbus_read_byte_data(f_dev, 0x44); //Read X registers
 	int16_t Y = i2c_smbus_read_byte_data(f_dev, 0x45) << 8 | i2c_smbus_read_byte_data(f_dev, 0x46); //Read Y registers

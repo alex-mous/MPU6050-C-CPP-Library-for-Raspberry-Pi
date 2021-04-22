@@ -6,7 +6,7 @@
 
 #include <MPU6050.h>
 
-MPU6050 device(0x68, true);
+MPU6050 device(0x68);
 
 int main() {
 	float ax, ay, az, gr, gp, gy; //Variables to store the accel, gyro and angle values
