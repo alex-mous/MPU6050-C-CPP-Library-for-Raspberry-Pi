@@ -108,6 +108,7 @@ class MPU6050 {
 		bool _first_run = 1; //Variable for whether to set gyro angle to acceleration angle in compFilter
 	public:
 		MPU6050(int8_t addr);
+		MPU6050(int8_t addr, bool run_update_thread);
 		void getAccelRaw(float *x, float *y, float *z);
 		void getGyroRaw(float *roll, float *pitch, float *yaw);
 		void getAccel(float *x, float *y, float *z);
